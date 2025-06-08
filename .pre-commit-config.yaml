@@ -1,0 +1,15 @@
+fail_fast: true
+repos:
+  - repo: local
+    hooks:
+      - id: editorconfig-checker
+        name: editorconfig-checker
+        entry: ec src/
+        language: system
+        pass_filenames: no
+
+      - id: linters-ruff
+        name: ruff
+        entry: ruff check ./src
+        language: system
+        pass_filenames: no
