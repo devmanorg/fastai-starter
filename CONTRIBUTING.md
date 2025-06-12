@@ -10,6 +10,22 @@
 - [Git SCM](https://git-scm.com/)
 - [GNU Make](https://www.gnu.org/software/make/)
 
+Вы можете проверить, установлены ли эти программы с помощью команд:
+```shell
+$ git --help
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+<...>
+
+$ make --help
+Usage: make [options] [target] ...
+Options:
+<...>
+```
+
 Для тех, кто использует Windows необходимы также программы **git** и **git bash**. В git bash надо добавить ещё команду
 make:
 
@@ -30,6 +46,7 @@ make:
 
 ```shell
 $ pre-commit install
+pre-commit installed at .git/hooks/pre-commit
 ```
 
 В последующем при коммите автоматически будут запускаться линтеры и автотесты. Есть линтеры будет недовольны, то коммит прервётся с ошибкой.
@@ -40,15 +57,15 @@ IDE для корректной работы подсказок необходи
 Сначала создайте само виртуальное окружение. Использовать Python версии не ниже 3.11.
 
 ```shell
-python3 -m venv venv
+$ python3 -m venv venv
 ```
 
 Активируйте окружение и установите зависимости.
 
 ```shell
-source venv/bin/activate  # для Linux
-.\venv\Scripts/activate  # Для Windows
-pip install -r requirements.txt
+$ source venv/bin/activate  # для Linux
+$ .\venv\Scripts/activate  # Для Windows
+$ pip install -r requirements.txt
 ```
 
 ## Как вести разработку
@@ -58,7 +75,7 @@ pip install -r requirements.txt
 Находясь в корневой директории проекта, запустить проект можно командой:
 
 ```shell
-fastapi dev src/main.py
+$ fastapi dev src/main.py
 ```
 
 Проект будет работать по адресу http://127.0.0.1:8000/
