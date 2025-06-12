@@ -39,9 +39,15 @@ $ pre-commit install
 IDE для корректной работы подсказок необходимо развернуть виртуальное окружение со всеми установленными зависимостями.
 Сначала создайте само виртуальное окружение. Использовать Python версии не ниже 3.11.
 
+```shell
+python3 -m venv venv
+```
+
 Активируйте окружение и установите зависимости.
 
 ```shell
+source venv/bin/activate  # для Linux
+.\venv\Scripts/activate  # Для Windows
 pip install -r requirements.txt
 ```
 
@@ -52,7 +58,7 @@ pip install -r requirements.txt
 Находясь в корневой директории проекта, запустить проект можно командой:
 
 ```shell
-uvicorn src.main:app --port 8000 --reload
+fastapi dev src/main.py
 ```
 
 Проект будет работать по адресу http://127.0.0.1:8000/
