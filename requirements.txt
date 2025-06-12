@@ -1,4 +1,3 @@
-fastapi==0.115.12
-uvicorn==0.34.3
+fastapi[standard]==0.115.12
 ruff==0.11.13
 editorconfig-checker==3.2.1
