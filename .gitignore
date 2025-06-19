@@ -4,7 +4,6 @@ env/
 venv/
 .idea/
 media/
-docker-compose.override.yml
 __pycache__
 tmp*
 .DS_Store
