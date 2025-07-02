@@ -18,3 +18,10 @@ repos:
         entry: ruff check ./src
         language: system
         pass_filenames: no
+
+      - id: test
+        name: pytest
+        entry: pytest -v src/
+        language: system
+        pass_filenames: no
+
