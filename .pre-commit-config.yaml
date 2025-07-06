@@ -21,7 +21,7 @@ repos:
 
       - id: test
         name: pytest
-        entry: pytest -v src/
+        entry: pytest src/
         language: system
         pass_filenames: no
 
