@@ -28,14 +28,13 @@ Options:
 <...>
 ```
 
-Для тех, кто использует Windows необходимы также программы **git** и **git bash**. В git bash надо добавить ещё команду
-make:
+Для тех, кто использует Windows необходимы также программы **git** и **git bash**. В **git bash** необходимо дополнительно установить
+**make**:
 
-- Go to [ezwinports](https://sourceforge.net/projects/ezwinports/files/)
-- Download make-4.4.1-without-guile-w32-bin.zip (get the version without guile)
-- Extract zip
-- Copy the contents to C:\ProgramFiles\Git\mingw64\ merging the folders, but do NOT overwrite/replace any exisiting
-  files.
+- Перейдите на сайт [ezwinports](https://sourceforge.net/projects/ezwinports/files/)
+- Скачайте `make-4.4.1-without-guile-w32-bin.zip` (выберите версию без `guile`)
+- Извлеките архив
+- Скопируйте содержимое архива в `C:\ProgramFiles\Git\mingw64\` **БЕЗ** перезаписи/замены любых вложенных файлов.
 
 Все дальнейшие команды запускать из-под **git bash**.
 
