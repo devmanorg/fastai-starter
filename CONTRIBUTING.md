@@ -58,7 +58,7 @@ IDE для корректной работы подсказок необходи
 
 В качестве пакетного менеджера на проекта используется [uv](https://docs.astral.sh/uv/).
 
-Установите [uv](https://docs.astral.sh/uv/) и в корне репозитория выполните команду
+[Установите uv](https://gitlab.dvmn.org/root/fastapi-articles/-/wikis/Uv-package-manager#1-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-uv) и в корне репозитория выполните команду
 
 ```shell
 $ uv sync
