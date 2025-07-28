@@ -19,6 +19,7 @@ exclude = [
     ".venv",
     ".vscode",
     "__pypackages__",
+    "__pycache__",
     "_build",
     "buck-out",
     "build",
