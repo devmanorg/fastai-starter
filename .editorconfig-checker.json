@@ -5,8 +5,7 @@
   "SpacesAfterTabs": false,
   "NoColor": false,
   "Exclude": [
-    "/__pycache__/",
-    "/migrations/"
+    "/__pycache__/"
   ],
   "AllowedContentTypes": [],
   "PassedFiles": [],
