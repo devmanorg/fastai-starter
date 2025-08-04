@@ -14,17 +14,12 @@
 
 Вы можете проверить, установлены ли эти программы с помощью команд:
 ```shell
-$ git --help
-usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
-           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-           [--config-env=<name>=<envvar>] <command> [<args>]
-<...>
+$ git --version
+git version 2.37.1.windows.1
 
-$ make --help
-Usage: make [options] [target] ...
-Options:
+$ make --version
+GNU Make 4.4.1
+Built for Windows32
 <...>
 ```
 
@@ -115,7 +110,7 @@ $ uv lock
 
 ```shell
 $ make help
-Cписок доступных команд:
+Список доступных команд:
 lint                      Проверяет линтерами код в репозитории
 format                    Автоматически исправляет форматирование кода -- порядок импортов, лишние пробелы и т.д.
 help                      Отображает список доступных команд и их описания
